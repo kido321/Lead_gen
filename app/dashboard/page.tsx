@@ -17,7 +17,7 @@ import {
 
 const DashboardLayout = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const [leads, setLeads] = useState([
+const [leads] = useState([
     { id: 1, description: 'Car accident on Main St', status: 'new', created_at: '2025-02-19' },
     { id: 2, description: 'Workplace injury claim', status: 'in_progress', created_at: '2025-02-18' }
   ]);

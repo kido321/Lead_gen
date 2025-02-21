@@ -200,7 +200,7 @@ export default function Dashboard() {
           const { data: teamsData, error: teamsError } = await supabase
             .from('team_members')
             .select("role, teams(id, name)")
-            .eq('user_id', user.id);
+            
           
           if (teamsError) throw teamsError;
           

@@ -64,8 +64,7 @@ export default function LeadForm() {
               team_id,
               teams(id, name)
             `)
-            .eq('user_id', user.id);
-
+            
           if (error) throw error;
           
           if (data && data.length > 0) {
